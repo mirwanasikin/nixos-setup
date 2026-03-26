@@ -1,0 +1,126 @@
+// -*- mode: jsonc -*-
+{
+    "height": 34,
+    "spacing": 4,
+
+    "modules-left": [
+        "sway/window"
+    ],
+    "modules-center": [
+        "sway/workspaces"
+    ],
+    "modules-right": [
+        "mpris",
+        "pulseaudio",
+        "network",
+        "group/hardware",
+        "battery",
+        "clock",
+    ],
+
+    // ── Left ──────────────────────────────────────────────────────────────
+    "sway/window": {
+        "max-length": 30,
+        "format": "{}"
+    },
+
+    // ── Center ────────────────────────────────────────────────────────────
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    // ── Right ─────────────────────────────────────────────────────────────
+
+    "mpris": {
+      "format": "{player_icon} {title} - {artist}",
+      "format-paused": " {title} - {artist}",
+      "player-icons": {
+         "spotify": "",
+         "default": "🎜"
+      },
+      "status-icons": {
+         "paused": ""
+      },
+      "max-length": 20,
+      "interval": 1
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-muted": "󰝟 muted",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}%",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": "󰖪 disconnected",
+        "tooltip-format-wifi": "{essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+        "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}",
+        "max-length": 30
+    },
+
+    // Group hardware: CPU + Memory + Disk — drawer style
+    "group/hardware": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "children-class": "hardware-child",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "cpu",
+            "memory",
+            "disk"
+        ]
+    },
+
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "tooltip": false,
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "󰍛 {used:0.1f}G",
+        "tooltip-format": "Used: {used:0.1f}GiB / {total:0.1f}GiB",
+        "interval": 5
+    },
+
+    "disk": {
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "interval": 30,
+        "tooltip-format": "Used: {used} / {total}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": false
+    },
+
+    "clock": {
+        "timezone": "Asia/Pontianak",
+        "format": "󰥔 {:%H:%M}",
+        "format-alt": "󰃭 {:%a, %d %b %Y}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+}

@@ -1,0 +1,181 @@
+/* ── Catppuccin Mocha Palette ────────────────────────────────────────────
+   base:     #1e1e2e   mantle:   #181825   crust:    #11111b
+   surface0: #313244   surface1: #45475a   surface2: #585b70
+   overlay0: #6c7086   overlay1: #7f849c   overlay2: #9399b2
+   subtext0: #a6adc8   subtext1: #bac2de   text:     #cdd6f4
+   lavender: #b4befe   blue:     #89b4fa   sapphire: #74c7ec
+   sky:      #89dceb   teal:     #94e2d5   green:    #a6e3a1
+   yellow:   #f9e2af   peach:    #fab387   maroon:   #eba0ac
+   red:      #f38ba8   mauve:    #cba6f7   pink:     #f5c2e7
+   flamingo: #f2cdcd   rosewater:#f5e0dc
+──────────────────────────────────────────────────────────────────────── */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+/* ── Bar spacing ─────────────────────────────────────────────────────── */
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 4px 6px;
+}
+
+/* ── Base pill style (shared) ────────────────────────────────────────── */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#disk,
+#battery,
+#tray,
+#custom-hardware {
+    background: #313244;
+    border-radius: 40px;
+    padding: 3px 12px;
+    margin: 4px 2px;
+}
+
+/* ── Workspaces ──────────────────────────────────────────────────────── */
+#workspaces {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    background: #313244;
+    color: #6c7086; /* overlay0 — inactive dim */
+    border-radius: 40px;
+    padding: 0 10px;
+    margin: 4px 2px;
+    min-width: 28px;
+    transition: all 0.15s ease;
+}
+
+#workspaces button.focused {
+    background: #45475a; /* surface1 */
+    color: #cba6f7; /* mauve */
+}
+
+#workspaces button.urgent {
+    background: #313244;
+    color: #f38ba8; /* red */
+}
+
+#workspaces button:hover {
+    background: #45475a;
+    color: #cdd6f4;
+}
+
+/* ── Window title ────────────────────────────────────────────────────── */
+#window {
+    color: #bac2de; /* subtext1 */
+    background: #313244;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* ── Clock ───────────────────────────────────────────────────────────── */
+#clock {
+    color: #cba6f7; /* mauve */
+    background: #313244;
+}
+
+/* ── Clock ───────────────────────────────────────────────────────────── */
+#mpris {
+    color: #f5c2e7; /* pink */
+    background: #313244;
+    border-radius: 40px;
+    padding: 0 12px;
+    margin: 4px 2px;
+}
+
+/* ── Audio ───────────────────────────────────────────────────────────── */
+#pulseaudio {
+    color: #89b4fa; /* blue */
+    background: #313244;
+}
+
+#pulseaudio.muted {
+    color: #6c7086; /* overlay0 */
+}
+
+/* ── Network ─────────────────────────────────────────────────────────── */
+#network {
+    color: #89dceb; /* sky */
+    background: #313244;
+}
+
+#network.disconnected {
+    color: #f38ba8; /* red */
+}
+
+/* ── Hardware group (drawer trigger) ─────────────────────────────────── */
+#cpu {
+    color: #fab387; /* peach */
+    background: #313244;
+}
+
+#memory {
+    color: #a6e3a1; /* green */
+    background: #313244;
+}
+
+#disk {
+    color: #f9e2af; /* yellow */
+    background: #313244;
+}
+
+/* ── Battery ─────────────────────────────────────────────────────────── */
+#battery {
+    color: #a6e3a1; /* green */
+    background: #313244;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af; /* yellow */
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8; /* red */
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    to { opacity: 0.4; }
+}
+
+/* ── Tray ────────────────────────────────────────────────────────────── */
+#tray {
+    background: #313244;
+    border-radius: 40px;
+    padding: 0 10px;
+    margin: 4px 2px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #313244;
+}

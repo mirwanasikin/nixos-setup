@@ -1,0 +1,17 @@
+# Final Config
+# Before you use this config, it's better you check all the files 
+
+include ~/.config/sway/config.d/variables.conf
+include ~/.config/sway/config.d/appearance.conf
+include ~/.config/sway/config.d/output.conf
+include ~/.config/sway/config.d/layout.conf
+include ~/.config/sway/config.d/keybinds/basic.conf
+include ~/.config/sway/config.d/keybinds/media.conf
+include ~/.config/sway/config.d/keybinds/resize.conf
+include ~/.config/sway/config.d/keybinds/application.conf
+include ~/.config/sway/config.d/keybinds/layout.conf
+include ~/.config/sway/config.d/keybinds/move.conf
+include ~/.config/sway/config.d/keybinds/workspace.conf
+include ~/.config/sway/config.d/autostart.conf
+
+include /etc/sway/config.d/*

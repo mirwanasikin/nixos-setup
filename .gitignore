@@ -1,0 +1,9 @@
+# Nix 
+result
+result-*
+
+# Secrets 
+secrets.nix 
+*.age
+*.pem
+*.key
