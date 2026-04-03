@@ -1,58 +1,62 @@
-# M. Irwan Asikin Personal NixOS Configurations
+# ❄️ NixOS Configuration
 
-My personal NixOS configuration. Managed with Nix Flakes and Home Manager as a NixOS module.
+Personal NixOS setup optimized for a minimal, keyboard-driven workflow.
 
-## System
+---
 
-| | |
-|---|---|
-| **Host** | Toshiba Satellite A665 (Sandy Bridge) |
-| **CPU** | Intel Core i3 M380 |
-| **WM** | Sway (Wayland) |
-| **Theme** | Catppuccin Mocha |
-| **Shell** | Zsh |
-| **Terminal** | Alacritty |
-| **Editor** | Neovim (LazyVim) |
+## 🧠 Philosopy
 
-## Structure
+This setup prioritizes:
 
-```
-nixos-setup/
-├── flake.nix
-├── hosts/
-│   └── nixos/
-│       ├── configuration.nix
-│       └── hardware-configuration.nix
-├── home/
-│   ├── home.nix
-│   └── modules/
-│       ├── packages.nix
-│       ├── zsh.nix
-│       ├── tmux.nix
-│       ├── gtk.nix
-│       └── dotfiles.nix
-└── dotfiles/
-    ├── sway/
-    ├── nvim/
-    ├── waybar/
-    └── ...
-```
+- Simplicity
+- Reproducibility
+- keyboard-driven workflow
+- Terminal centric style
+- Low resource usage
 
-## How It Works
+---
 
-- **Flakes** — pinned inputs, reproducible builds
-- **NixOS module** — Home Manager integrated into system config, one command to rule them all
-- **xdg.configFile** — dotfiles symlinked from repo into `~/.config/`, no Stow needed
+## ⚠️ Disclaimer
 
-## Rebuild
+This configuration is tailored for personal use and may not suit for everyone.
+
+Use it as a reference, not a universal solution.
+
+Inside is less GUI software and mostly just CLI tools
+
+---
+
+## 📦 What's Inside
+
+- Window Manager : Sway
+- Display Manager : Sddm
+- Shell : zsh (Heavy Configured in nix, check the [zsh.nix](./home/modules/zsh.nix) first)
+- Browser : Google Chrome
+- Media : Spotify with spicetify, mpv and imv
+- Dotfiles : rofi, waybar, sway, dunst, etc (check my [dotfiles](./dotfiles) folder)
+
+---
+
+## 🛠️ Customization
+
+Feel free to:
+
+- Replace CLI tools with GUI alternatives
+- Add your preferred IDE (since i just using neovim)
+- Enable SSH if you need
+
+---
+
+## 🚀 Usage
+
+Appy Configuration:
 
 ```bash
-sudo nixos-rebuild switch --flake ~/nixos-setup#nixos
+sudo nixos-rebuild switch --flake .#your-hostname
 ```
 
-Or use the alias:
+---
 
-```bash
-nixupdate
-```
+## ⚖️ License
 
+**MIT**
