@@ -20,6 +20,7 @@
     ouch
 
     # Dev tools
+    gh
     lazygit
     neovim
     jq
@@ -41,8 +42,10 @@
     cava
     playerctl
 
-    # Zoom
+    # Communications
     zoom-us
+    ferdium
+    thunderbird
   ];
 
   programs.fzf = {
