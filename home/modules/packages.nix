@@ -9,6 +9,10 @@
     ripgrep
     yazi
     bat
+    glow
+    hyperfine
+    delta
+    watchexec
 
     # System monitoring
     btop
@@ -18,11 +22,17 @@
     dust
     speedtest-cli
     ouch
+    nix-output-monitor
+    nvd
+    nh
 
     # Dev tools
     gh
     lazygit
     neovim
+    k9s
+    terragrunt
+    helm
     jq
     awscli2
     ssm-session-manager-plugin
