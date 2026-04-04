@@ -22,6 +22,8 @@
     rofi
     wlogout
     wayland-utils
+    dunst
+    libnotify
 
     # Container Tools
     podman
