@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   homeDir = config.home.homeDirectory;
@@ -27,6 +32,8 @@ in
       '')
 
       ''
+        export GPG_TTY=$(tty)
+
         if [[ -z "$SSH_CONNECTION" ]]; then
           fastfetch -c examples/13 
         fi
@@ -59,38 +66,38 @@ in
     sessionVariables = {
       EDITOR = "nvim";
       VISUAL = "nvim";
-      TERM   = "xterm-256color";
+      TERM = "xterm-256color";
     };
 
     shellAliases = {
       # System
-      cl       = "clear";
-      suspend  = "sudo systemctl suspend";
-      reboot   = "sudo reboot now";
+      cl = "clear";
+      suspend = "sudo systemctl suspend";
+      reboot = "sudo reboot now";
       shutdown = "sudo shutdown now";
-      cekram   = "sudo slabtop -o -s -c | bat";
+      cekram = "sudo slabtop -o -s -c | bat";
       cleanram = "sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches";
 
       # Tool overrides
-      cat  = "bat";
-      vi   = "nvim";
-      py   = "python3";
-      cd   = "z";
-      ls   = "eza --icons --group-directories-first";
-      ll   = "eza -lah --git";
+      cat = "bat";
+      vi = "nvim";
+      py = "python3";
+      cd = "z";
+      ls = "eza --icons --group-directories-first";
+      ll = "eza -lah --git";
       tree = "eza --tree";
-      yz   = "yazi";
-      lg   = "lazygit";
-      tm   = "tmux";
+      yz = "yazi";
+      lg = "lazygit";
+      tm = "tmux";
 
       # Apps
-      blue  = "bluetui";
+      blue = "bluetui";
       share = "kdeconnect-cli -d ecc1eb827f474ec9af7e269c5dae053a --share";
-      pair_device  = "kdeconnect-cli --pair --device ecc1eb827f474ec9af7e269c5dae053a";
+      pair_device = "kdeconnect-cli --pair --device ecc1eb827f474ec9af7e269c5dae053a";
       list_device = "kdeconnect-cli --list-devices";
 
       # Complex
-      vif   = "fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always {}' | xargs nvim";
+      vif = "fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always {}' | xargs nvim";
       snvim = ''sudo env "PATH=$HOME/.nix-profile/bin:$PATH" nvim -u ${homeDir}/.config/nvim/init.lua'';
 
     };

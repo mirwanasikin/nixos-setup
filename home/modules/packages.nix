@@ -32,6 +32,7 @@
     kubectl
     markdownlint-cli2
     marksman
+    gnupg
 
     # Shell utilities
     tldr

@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   home.username = "irwan";
@@ -8,12 +8,27 @@
   programs.home-manager.enable = true;
   programs.git = {
     enable = true;
+    signing = {
+      key = "3B1B778D1D8F51B1";
+      signByDefault = true;
+    };
     settings = {
       user.name = "M. Irwan Asikin";
       user.email = "225542013+mirwanasikin@users.noreply.github.com";
       init.defaultBranch = "main";
       pull.rebase = false;
     };
+  };
+
+  programs.gpg = {
+    enable = true;
+  };
+
+  services.gpg-agent = {
+    enable = true;
+    pinentry.package = pkgs.pinentry-curses;
+    defaultCacheTtl = 28800;
+    maxCacheTtl = 86400;
   };
 
   programs.ssh = {
