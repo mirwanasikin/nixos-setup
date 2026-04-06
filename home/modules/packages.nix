@@ -54,7 +54,8 @@
     playerctl
 
     # Media $ Apps
-    google-chrome
+    firefox
+    proton-vpn
     mpv
     imv
 
