@@ -11,6 +11,7 @@
     ./modules/locale.nix
     ./modules/programs.nix
     ./modules/services.nix
+    ./modules/k3s.nix
   ];
 
   # Users
