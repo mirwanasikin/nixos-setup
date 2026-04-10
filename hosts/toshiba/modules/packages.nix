@@ -46,6 +46,10 @@
     strace
     lsof
 
+    # Cert
+    mkcert
+    nssTools
+
     # Theming
     catppuccin-sddm
   ];
