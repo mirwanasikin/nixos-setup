@@ -30,5 +30,9 @@
     # terrafrom
     terraform-ls
     tflint
+
+    # Markdown
+    markdownlint-cli2
+    marksman
   ];
 }

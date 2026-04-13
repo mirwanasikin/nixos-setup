@@ -40,9 +40,6 @@
     terraform
     kdePackages.kdeconnect-kde
     kubectl
-    markdownlint-cli2
-    marksman
-    gnupg
 
     # Shell utilities
     tldr
@@ -50,8 +47,6 @@
     figlet
     atuin
     bluetui
-    cava
-    playerctl
 
     # Media $ Apps
     firefox
@@ -59,6 +54,8 @@
     mpv
     imv
     obsidian
+    cava
+    playerctl
 
     # Communications
     zoom-us
