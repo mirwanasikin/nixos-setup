@@ -7,4 +7,7 @@
     tray = "never";
   };
 
+  services.syncthing = {
+    enable = true;
+  };
 }
