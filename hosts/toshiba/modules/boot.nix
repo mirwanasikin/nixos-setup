@@ -50,7 +50,4 @@
     theme = "catppuccin-macchiato";
   };
 
-  # Kernel
-  boot.kernelPackages = pkgs.linuxPackages;
-
 }

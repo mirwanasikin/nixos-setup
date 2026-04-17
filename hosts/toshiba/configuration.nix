@@ -14,6 +14,7 @@
     ./modules/users.nix
     ./modules/settings.nix
     ./modules/agenix.nix
+    ./modules/kernel.nix
   ];
 
 }
