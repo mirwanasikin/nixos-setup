@@ -37,6 +37,7 @@
     pciutils
     usbutils
     binutils
+    smartmontools
 
     # Debug Forensics
     gcc
