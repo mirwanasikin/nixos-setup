@@ -5,6 +5,7 @@
     settings = {
       main = {
         font = "FiraCode Nerd Font:size=12";
+        pad = "10x10";
       };
       colors-dark = {
         alpha = "0.9";
