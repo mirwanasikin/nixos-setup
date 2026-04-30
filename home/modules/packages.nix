@@ -57,6 +57,7 @@
     imv
     obsidian
     cava
+    todoist-electron
     playerctl
 
     # Communications
