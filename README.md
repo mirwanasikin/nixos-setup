@@ -33,7 +33,7 @@ Inside is less GUI software and mostly just CLI tools
 - Display Manager : Sddm
 - Terminal : foot
 - Shell : zsh (Heavy Configured in nix, check the [zsh.nix](./home/modules/zsh.nix) first)
-- Browser : Brave
+- Browser : Librewolf
 - Email : Thunderbird
 - Media : Spotify with spicetify, mpv and imv
 - Dotfiles : rofi, waybar, sway, dunst, etc (check my [dotfiles](./dotfiles) folder)

@@ -53,7 +53,7 @@
 
     # Media & Apps
     proton-vpn
-    brave
+    librewolf
     mpv
     imv
     obsidian

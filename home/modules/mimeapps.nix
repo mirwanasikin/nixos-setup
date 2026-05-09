@@ -14,10 +14,10 @@
       "image/gif" = "imv.desktop";
       "image/webp" = "imv.desktop";
       "image/svg+xml" = "imv.desktop";
-      "text/html" = "brave.desktop";
-      "applications/xhtml-xml" = "brave.desktop";
-      "x-scheme-handler/http" = "brave.desktop";
-      "x-scheme-handler/https" = "brave.desktop";
+      "text/html" = "librewolf.desktop";
+      "applications/xhtml-xml" = "librewolf.desktop";
+      "x-scheme-handler/http" = "librewolf.desktop";
+      "x-scheme-handler/https" = "librewolf.desktop";
     };
   };
 }
