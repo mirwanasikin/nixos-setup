@@ -1,4 +1,4 @@
-image=$HOME/.config/sway/assets/wallpaper/samurai.jpg
+image=$HOME/.config/sway/assets/wallpaper/nix-wallhaven.png
 scaling=fill
 
 color=1e1e2e
