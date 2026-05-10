@@ -17,6 +17,12 @@
     mode = "600";
   };
 
+  age.secrets.codeberg_git = {
+    file = ../../../secrets/aws_ec2_pem.age;
+    path = "/home/irwan/.ssh/codeberg_git";
+    owner = "irwan";
+    mode = "600";
+  };
   age.secrets.aws-creds = {
     file = ../../../secrets/aws_creds.age;
     path = "/home/irwan/.aws/credentials";

@@ -7,4 +7,6 @@ in
   "aws_ec2_pem.age".publicKeys = [ master ];
 
   "aws_creds.age".publicKeys = [ master ];
+
+  "codeberg_git.age".publicKeys = [ master ];
 }

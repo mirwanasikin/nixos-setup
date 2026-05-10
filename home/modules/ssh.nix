@@ -14,6 +14,11 @@
         user = "git";
         identityFile = "~/.ssh/key_github_irwan";
       };
+
+      "codeberg.org" = {
+        user = "git";
+        identityFile = "~/.ssh/codeberg_git";
+      };
     };
   };
 
