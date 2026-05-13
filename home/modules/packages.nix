@@ -33,7 +33,7 @@
     neovim
     k9s
     terragrunt
-    helm
+    kubernetes-helm
     jq
     mods
     aider-chat
