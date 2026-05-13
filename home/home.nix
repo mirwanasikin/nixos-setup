@@ -15,6 +15,7 @@
     ./modules/git.nix
     ./modules/ssh.nix
     ./modules/services.nix
+    ./modules/helium.nix
   ];
 
   home.username = "irwan";
