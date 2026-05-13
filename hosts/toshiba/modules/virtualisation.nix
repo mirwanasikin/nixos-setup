@@ -2,7 +2,7 @@
 
 {
   # Containers Podman
-  virtualisation.containers.enable = false;
+  virtualisation.containers.enable = true;
   virtualisation.containers.policy = {
     default = [ { type = "insecureAcceptAnything"; } ];
   };
