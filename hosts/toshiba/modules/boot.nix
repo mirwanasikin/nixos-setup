@@ -12,22 +12,23 @@
   boot.initrd.systemd.enable = true;
 
   # LUKS Encrypted swap
-  boot.initrd.secrets = {
-    "/etc/secrets/swap.key" = /etc/secrets/swap.key;
-  };
+  # Used in the future
+  # boot.initrd.secrets = {
+  #   "/etc/secrets/swap.key" = /etc/secrets/swap.key;
+  # };
 
-  boot.initrd.luks.devices."swap" = {
-    device = "/dev/disk/by-uuid/eca7241b-b49e-4fdf-87bd-b5aa75ed75c4"; # UUID sda2 baru
-    keyFile = "/etc/secrets/swap.key";
-  };
+  # boot.initrd.luks.devices."swap" = {
+  #   device = "/dev/disk/by-uuid/XXXXXXXXXXXXXX";
+  #   keyFile = "/etc/secrets/swap.key";
+  # };
 
   swapDevices = [
     {
-      device = "/dev/mapper/swap";
+      device = "/dev/disk/by-uuid/d6b673ef-8b59-42f5-8ea5-22a5098181d6";
     }
   ];
 
-  boot.resumeDevice = "/dev/mapper/swap";
+  boot.resumeDevice = "/dev/disk/by-uuid/d6b673ef-8b59-42f5-8ea5-22a5098181d6";
 
   # GRUB
   boot.loader.grub = {
