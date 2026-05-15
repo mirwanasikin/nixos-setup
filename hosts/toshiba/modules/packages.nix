@@ -54,5 +54,12 @@
 
     # Theming
     catppuccin-sddm
+
+    # Screenshot
+    grim
+    slurp
+
+    # Mango
+    wlr-randr
   ];
 }

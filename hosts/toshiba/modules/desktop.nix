@@ -4,6 +4,9 @@
   # Sway
   programs.sway.enable = true;
 
+  # MangoWM
+  programs.mango.enable = true;
+
   # SDDM
   services.displayManager.sddm = {
     enable = true;

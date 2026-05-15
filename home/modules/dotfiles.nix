@@ -16,6 +16,7 @@ let
     sway = "sway";
     swaylock = "swaylock";
     wlogout = "wlogout";
+    wallpaper = "wallpaper";
   };
 
 in
@@ -29,5 +30,7 @@ in
     // {
       # starship.toml = file tunggal, beda treatment
       "starship.toml".source = create_symlink "${dotfiles}/starship.toml";
+      "mango/config.jsonc".source = create_symlink "${dotfiles}/mango/config.jsonc";
+      "mango/style.css".source = create_symlink "${dotfiles}/mango/style.css";
     };
 }
