@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -64,5 +64,9 @@
 
     # Communications
     thunderbird
+
+    # testing
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
+
 }

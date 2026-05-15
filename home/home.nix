@@ -16,6 +16,7 @@
     ./modules/ssh.nix
     ./modules/services.nix
     ./modules/helium.nix
+    ./modules/wf-recorder.nix
   ];
 
   home.username = "irwan";
