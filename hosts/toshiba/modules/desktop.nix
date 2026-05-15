@@ -30,5 +30,8 @@
     ipafont
     kanji-stroke-order-font
     nerd-fonts.fira-code
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.meslo-lg
+    nerd-fonts.jetbrains-mono
   ];
 }
