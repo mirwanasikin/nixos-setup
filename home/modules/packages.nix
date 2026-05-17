@@ -53,7 +53,6 @@
 
     # Media & Apps
     proton-vpn
-    librewolf
     mpv
     imv
     obsidian
