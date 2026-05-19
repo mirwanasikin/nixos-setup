@@ -9,14 +9,14 @@
   # programs.mango.enable = true;
 
   # SDDM
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   wayland.enable = true;
-  #   theme = "catppuccin-mocha-mauve";
-  # };
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    theme = "catppuccin-mocha-mauve";
+  };
 
   # Ly displaymanager
-  services.displayManager.ly.enable = true;
+  # services.displayManager.ly.enable = true;
 
   # XDG Portals
   xdg.portal = {
