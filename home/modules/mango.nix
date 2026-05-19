@@ -42,10 +42,10 @@
       zoom_end_ratio=0.8
       fadein_begin_opacity=0.5
       fadeout_begin_opacity=0.8
-      animation_duration_move=200
-      animation_duration_open=200
-      animation_duration_tag=150
-      animation_duration_close=250
+      animation_duration_move=100
+      animation_duration_open=100
+      animation_duration_tag=100
+      animation_duration_close=100
       animation_duration_focus=0
       animation_curve_open=0.46,1.0,0.29,1
       animation_curve_move=0.46,1.0,0.29,1
@@ -285,7 +285,7 @@
     '';
     autostart_sh = ''
       waybar -c ~/.config/mango/config.jsonc -s ~/.config/mango/style.css &
-      swaybg -i ~/.config/wallpaper/cabin-2.jpg &
+      swaybg -i ~/.config/wallpaper/tokyo-catppuccin.jpg &
       swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
         timeout 600 'mmsg -d disable_monitor,LVDS-1' resume 'mmsg -d enable_monitor,LVGS-1' \
