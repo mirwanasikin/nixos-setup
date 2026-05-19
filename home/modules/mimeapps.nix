@@ -14,10 +14,10 @@
       "image/gif" = "imv.desktop";
       "image/webp" = "imv.desktop";
       "image/svg+xml" = "imv.desktop";
-      "text/html" = "librewolf.desktop";
-      "applications/xhtml-xml" = "librewolf.desktop";
-      "x-scheme-handler/http" = "librewolf.desktop";
-      "x-scheme-handler/https" = "librewolf.desktop";
+      "text/html" = "helium.desktop";
+      "applications/xhtml-xml" = "helium.desktop";
+      "x-scheme-handler/http" = "helium.desktop";
+      "x-scheme-handler/https" = "helium.desktop";
     };
   };
 }
