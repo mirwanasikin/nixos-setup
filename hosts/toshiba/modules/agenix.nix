@@ -10,6 +10,13 @@
     mode = "600";
   };
 
+  age.secrets.gitlab-ssh = {
+    file = ../../../secrets/gitlab_key.age;
+    path = "/home/irwan/.ssh/gitlab_key";
+    owner = "irwan";
+    mode = "600";
+  };
+
   age.secrets.aws-ec2 = {
     file = ../../../secrets/aws_ec2_pem.age;
     path = "/home/irwan/.ssh/test_1.pem";
