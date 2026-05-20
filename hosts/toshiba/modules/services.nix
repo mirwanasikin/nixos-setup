@@ -33,6 +33,14 @@
   # TailScale
   services.tailscale.enable = true;
 
+  # Gitlab Runner
+  services.gitlab-runner = {
+    enable = true;
+    settings = {
+      concurrent = 1;
+    };
+  };
+
   # Ollama
   # services.ollama = {
   #  enable = true;

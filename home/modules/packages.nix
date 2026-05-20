@@ -43,6 +43,7 @@
     terraform
     kdePackages.kdeconnect-kde
     kubectl
+    gitlab-ci-local
 
     # Shell utilities
     tldr
