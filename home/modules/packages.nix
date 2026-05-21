@@ -15,6 +15,7 @@
     watchexec
     ouch
     unrar
+    unzip
 
     # System monitoring
     btop
