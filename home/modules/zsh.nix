@@ -62,10 +62,10 @@ in
     ];
 
     plugins = [
-      {
-        name = "zsh-vi-mode";
-        src = pkgs.zsh-vi-mode;
-      }
+      # {
+      #   name = "zsh-vi-mode";
+      #   src = pkgs.zsh-vi-mode;
+      # }
       {
         name = "zsh-autosuggestions";
         src = pkgs.zsh-autosuggestions;
