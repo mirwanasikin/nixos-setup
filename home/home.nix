@@ -18,6 +18,7 @@
     ./modules/services.nix
     ./modules/helium.nix
     ./modules/wf-recorder.nix
+    ./modules/symlink.nix
     # ./modules/mango.nix
   ];
 

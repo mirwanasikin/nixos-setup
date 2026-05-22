@@ -1,36 +1,55 @@
-{ config, ... }:
-
-let
-  dotfiles = "${config.home.homeDirectory}/nixos-config/dotfiles";
-  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
-
-  configs = {
-    bat = "bat";
-    yazi = "yazi";
-    btop = "btop";
-    waybar = "waybar";
-    dunst = "dunst";
-    rofi = "rofi";
-    fastfetch = "fastfetch";
-    nvim = "nvim";
-    sway = "sway";
-    swaylock = "swaylock";
-    wlogout = "wlogout";
-    wallpaper = "wallpaper";
-  };
-
-in
+{ ... }:
 
 {
-  xdg.configFile =
-    (builtins.mapAttrs (name: subpath: {
-      source = create_symlink "${dotfiles}/${subpath}";
-      recursive = true;
-    }) configs)
-    // {
-      # starship.toml = file tunggal, beda treatment
-      "starship.toml".source = create_symlink "${dotfiles}/starship.toml";
-      "mango/config.jsonc".source = create_symlink "${dotfiles}/mango/config.jsonc";
-      "mango/style.css".source = create_symlink "${dotfiles}/mango/style.css";
-    };
+  # Yazi
+  programs.yazi = {
+    enable = true;
+    shellWrapperName = "y";
+  };
+
+  catppuccin.yazi = {
+    enable = true;
+    flavor = "mocha";
+  };
+
+  # Bat
+  programs.bat.enable = true;
+
+  catppuccin.bat = {
+    enable = true;
+    flavor = "mocha";
+  };
+
+  # Lazygit
+  programs.lazygit.enable = true;
+
+  catppuccin.lazygit = {
+    enable = true;
+    accent = "mauve";
+    flavor = "mocha";
+  };
+
+  # Eza
+  programs.eza.enable = true;
+
+  catppuccin.eza = {
+    enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+  };
+
+  # Btop
+  programs.btop = {
+    enable = true;
+    extraConfig = ''
+      theme_background = false
+      vim_keys = true
+      show_uptime = true
+    '';
+  };
+
+  catppuccin.btop = {
+    enable = true;
+    flavor = "mocha";
+  };
 }

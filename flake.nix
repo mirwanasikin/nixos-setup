@@ -28,6 +28,8 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
+
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs =
@@ -36,6 +38,7 @@
       nixpkgs,
       home-manager,
       agenix,
+      catppuccin,
       ...
     }@inputs:
     let
@@ -44,7 +47,12 @@
           useGlobalPkgs = true;
           useUserPackages = true;
           extraSpecialArgs = { inherit inputs agenix; };
-          users.irwan = import ./home/home.nix;
+          users.irwan = {
+            imports = [
+              ./home/home.nix
+              inputs.catppuccin.homeModules.catppuccin
+            ];
+          };
         };
       };
     in

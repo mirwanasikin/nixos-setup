@@ -11,10 +11,30 @@ let
 in
 
 {
+  programs.atuin = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  catppuccin.atuin = {
+    enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+  };
+
+  catppuccin.zsh-syntax-highlighting = {
+    enable = true;
+    flavor = "mocha";
+  };
 
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  catppuccin.fzf = {
+    enable = true;
+    flavor = "mocha";
   };
 
   programs.zoxide = {
@@ -56,8 +76,6 @@ in
         if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
           exec dbus-run-session sway
         fi
-
-        eval "$(atuin init zsh)"
       ''
     ];
 

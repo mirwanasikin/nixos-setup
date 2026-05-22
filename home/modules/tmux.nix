@@ -1,5 +1,7 @@
 { ... }:
 {
+  catppuccin.tmux.enable = true;
+
   programs.tmux = {
     enable = true;
 
@@ -77,16 +79,6 @@
       bind-key -T copy-mode-vi C-v send-keys -X rectangular-toggle
       bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
       unbind -T copy-mode-vi MouseDragEnd1Pane
-
-      # TPM
-      set-environment -g TMUX_PLUGIN_MANAGER_PATH "$HOME/.tmux/plugins/"
-      set -g @plugin 'tmux-plugins/tpm'
-      set -g @plugin 'tmux-plugins/tmux-sensible'
-      set -g @plugin 'catppuccin/tmux#v2.1.3'
-
-      set -g @catppuccin_flavor 'mocha'
-
-      run '~/.tmux/plugins/tpm/tpm'
     '';
   };
 }

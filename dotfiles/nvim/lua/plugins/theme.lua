@@ -49,7 +49,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-mocha",
     },
+  },
+
+  {
+    "nvimdev/dashboard-nvim",
+    dependencies = { "catppuccin" },
   },
 }
