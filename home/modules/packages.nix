@@ -7,8 +7,6 @@
     fd
     fzf
     ripgrep
-    yazi
-    bat
     glow
     hyperfine
     delta
@@ -16,9 +14,9 @@
     ouch
     unrar
     unzip
+    zip
 
     # System monitoring
-    btop
     htop
     duf
     ncdu
@@ -30,7 +28,6 @@
 
     # Dev tools
     gh
-    lazygit
     neovim
     k9s
     terragrunt

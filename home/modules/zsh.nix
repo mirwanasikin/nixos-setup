@@ -11,10 +11,19 @@ let
 in
 
 {
+  catppuccin.zsh-syntax-highlighting = {
+    enable = true;
+    flavor = "mocha";
+  };
 
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  catppuccin.fzf = {
+    enable = true;
+    flavor = "mocha";
   };
 
   programs.zoxide = {
