@@ -11,3 +11,4 @@ vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
+vim.opt.termguicolors = true
