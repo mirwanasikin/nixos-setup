@@ -8,7 +8,7 @@
   };
 
   # Containers Docker
-  virtualisation.docker.enable = true;
+  virtualisation.docker.enable = false;
 
   # Libvirt / QEMU
   virtualisation.libvirtd = {
