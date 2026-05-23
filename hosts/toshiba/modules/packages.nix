@@ -20,10 +20,9 @@
     swayidle
     waybar
     rofi
-    wlogout
     wayland-utils
-    dunst
     libnotify
+    wlogout
 
     # Container Tools
     podman

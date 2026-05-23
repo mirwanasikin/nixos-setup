@@ -52,4 +52,13 @@
     enable = true;
     flavor = "mocha";
   };
+
+  # Dunst
+  services.dunst.enable = true;
+
+  catppuccin.dunst = {
+    enable = true;
+    flavor = "mocha";
+  };
+
 }

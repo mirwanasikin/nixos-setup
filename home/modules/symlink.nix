@@ -6,14 +6,13 @@ let
 
   configs = {
     waybar = "waybar";
-    dunst = "dunst";
     rofi = "rofi";
     fastfetch = "fastfetch";
     nvim = "nvim";
     sway = "sway";
     swaylock = "swaylock";
-    wlogout = "wlogout";
     wallpaper = "wallpaper";
+    wlogout = "wlogout";
   };
 
 in
@@ -25,9 +24,8 @@ in
       recursive = true;
     }) configs)
     // {
-      # starship.toml = file tunggal, beda treatment
       "starship.toml".source = create_symlink "${dotfiles}/starship.toml";
-      "mango/config.jsonc".source = create_symlink "${dotfiles}/mango/config.jsonc";
-      "mango/style.css".source = create_symlink "${dotfiles}/mango/style.css";
+      # "mango/config.jsonc".source = create_symlink "${dotfiles}/mango/config.jsonc";
+      # "mango/style.css".source = create_symlink "${dotfiles}/mango/style.css";
     };
 }

@@ -11,8 +11,8 @@
       };
     };
     iconTheme = {
-      name = "Tela-dracula";
-      package = pkgs.tela-circle-icon-theme;
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
     };
     cursorTheme = {
       name = "Bibata-Modern-Ice";
