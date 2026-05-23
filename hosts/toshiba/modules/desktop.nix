@@ -9,14 +9,19 @@
   # programs.mango.enable = true;
 
   # SDDM
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    theme = "catppuccin-mocha-mauve";
-  };
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   wayland.enable = true;
+  #   theme = "catppuccin-mocha-mauve";
+  # };
+
+  # Niri
+  programs.niri.enable = true;
+  programs.xwayland.enable = true;
+  services.displayManager.defaultSession = "niri";
 
   # Ly displaymanager
-  # services.displayManager.ly.enable = true;
+  services.displayManager.ly.enable = true;
 
   # XDG Portals
   xdg.portal = {
