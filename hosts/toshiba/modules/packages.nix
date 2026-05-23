@@ -24,6 +24,11 @@
     libnotify
     wlogout
 
+    # Niri
+    niri
+    noctalia-shell
+    xwayland-satellite
+
     # Container Tools
     podman
     podman-compose

@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "pkill mango || pkill sway",
+    "action" : "pkill mango || pkill sway || pkill niri",
     "text" : "Logout",
     "keybind" : "e"
 }

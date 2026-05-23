@@ -13,6 +13,8 @@ let
     swaylock = "swaylock";
     wallpaper = "wallpaper";
     wlogout = "wlogout";
+    niri = "niri";
+    noctalia = "noctalia";
   };
 
 in
