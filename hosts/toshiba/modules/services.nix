@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ ... }:
 
 {
   # Services
@@ -13,7 +13,7 @@
 
   # k3s
   services.k3s = {
-    enable = false;
+    enable = true;
     role = "server";
   };
 

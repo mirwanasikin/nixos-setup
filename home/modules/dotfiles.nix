@@ -61,4 +61,12 @@
     flavor = "mocha";
   };
 
+  # k9s
+  programs.k9s.enable = true;
+
+  catppuccin.k9s = {
+    enable = true;
+    flavor = "mocha";
+  };
+
 }

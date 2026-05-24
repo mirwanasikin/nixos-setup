@@ -9,7 +9,7 @@
         "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
@@ -494,7 +494,7 @@
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
-        "disableWallpaper": true
+        "disableWallpaper": false
     },
     "notifications": {
         "backgroundOpacity": 1,
@@ -504,7 +504,7 @@
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": false,
-        "enableMediaToast": false,
+        "enableMediaToast": true,
         "enabled": true,
         "location": "top_right",
         "lowUrgencyDuration": 3,
@@ -525,7 +525,7 @@
             "lowSoundFile": "",
             "normalSoundFile": "",
             "separateSounds": false,
-            "volume": 0.5
+            "volume": 0.3
         }
     },
     "osd": {
