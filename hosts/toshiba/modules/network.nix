@@ -4,6 +4,9 @@
   # Hostname & Network Manager
   networking.hostName = "toshiba";
   networking.networkmanager.enable = true;
+  networking.hosts = {
+    "127.0.0.1" = [ "myapp.com" ];
+  };
 
   # DNS Over TLS
   services.resolved = {
