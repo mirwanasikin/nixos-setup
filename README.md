@@ -32,15 +32,15 @@ This setup prioritizes:
 
 Here's my packages I used the most and my configuration
 
-| Category          | Choice                                                                                                                     |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `Kernel`          | [CachyOS LTS](https://github.com/xddxdd/nix-cachyos-kernel)                                                                |
-| `Window Manager`  | Sway and Niri                                                                                                              |
-| `Display Manager` | Ly                                                                                                                         |
-| `Terminal`        | Foot                                                                                                                       |
-| `Shell`           | zsh                                                                                                                        |
-| `Browser`         | [Helium](https://github.com/oxcl/nix-flake-helium-browser) and [Zen Browser](https://github.com/youwen5/zen-browser-flake) |
-| `Media`           | [Spotify with Spicetify Patch](https://github.com/Gerg-L/spicetify-nix)                                                    |
+| Category          | Choice                                                                  |
+| ----------------- | ----------------------------------------------------------------------- |
+| `Kernel`          | [CachyOS LTS](https://github.com/xddxdd/nix-cachyos-kernel)             |
+| `Window Manager`  | Sway and Niri                                                           |
+| `Display Manager` | Ly                                                                      |
+| `Terminal`        | Foot                                                                    |
+| `Shell`           | zsh                                                                     |
+| `Browser`         | [Helium](https://github.com/oxcl/nix-flake-helium-browser)              |
+| `Media`           | [Spotify with Spicetify Patch](https://github.com/Gerg-L/spicetify-nix) |
 
 > [!NOTE]
 > Some of the packages are having links to the flake I'm using or you can just see my [Flake.nix](./flake.nix) instead.

@@ -62,8 +62,6 @@
     # Communications
     thunderbird
 
-    # Browser
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
 }
