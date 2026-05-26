@@ -54,7 +54,7 @@
   };
 
   # Dunst
-  services.dunst.enable = true;
+  services.dunst.enable = false;
 
   catppuccin.dunst = {
     enable = true;
