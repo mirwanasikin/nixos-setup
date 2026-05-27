@@ -84,7 +84,7 @@ input {
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
-    gaps 6
+    gaps 10
 
     center-focused-column "never"
 
