@@ -5,14 +5,9 @@ let
   create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
 
   configs = {
-    waybar = "waybar";
-    rofi = "rofi";
     fastfetch = "fastfetch";
     nvim = "nvim";
-    sway = "sway";
-    swaylock = "swaylock";
     wallpaper = "wallpaper";
-    wlogout = "wlogout";
     niri = "niri";
     noctalia = "noctalia";
   };
@@ -27,7 +22,5 @@ in
     }) configs)
     // {
       "starship.toml".source = create_symlink "${dotfiles}/starship.toml";
-      # "mango/config.jsonc".source = create_symlink "${dotfiles}/mango/config.jsonc";
-      # "mango/style.css".source = create_symlink "${dotfiles}/mango/style.css";
     };
 }

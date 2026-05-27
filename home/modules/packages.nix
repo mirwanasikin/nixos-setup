@@ -34,7 +34,6 @@
     kubernetes-helm
     jq
     mods
-    aider-chat
     awscli2
     ssm-session-manager-plugin
     ansible

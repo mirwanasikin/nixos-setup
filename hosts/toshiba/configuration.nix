@@ -1,8 +1,7 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   imports = [
-    inputs.mangowm.nixosModules.mango
     ./hardware-configuration.nix
     ./modules/boot.nix
     ./modules/desktop.nix

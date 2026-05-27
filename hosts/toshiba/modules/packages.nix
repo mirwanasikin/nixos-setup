@@ -14,20 +14,12 @@
     nmap
     tcpdump
 
-    # Sway Ecosystem
-    swaylock
-    swaybg
-    swayidle
-    waybar
-    rofi
-    wayland-utils
-    libnotify
-    wlogout
-
     # Niri
     niri
     noctalia-shell
     xwayland-satellite
+    wayland-utils
+    libnotify
 
     # Container Tools
     podman
@@ -58,12 +50,10 @@
 
     # Theming
     catppuccin-sddm
+    bibata-cursors
 
     # Screenshot
     grim
     slurp
-
-    # Mango
-    wlr-randr
   ];
 }

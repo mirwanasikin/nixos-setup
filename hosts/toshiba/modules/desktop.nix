@@ -1,27 +1,17 @@
 { pkgs, ... }:
 
 {
-  # Sway
-  programs.sway.enable = true;
-
-  # MangoWM
-  # For the future hardware
-  # programs.mango.enable = true;
-
-  # SDDM
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   wayland.enable = true;
-  #   theme = "catppuccin-mocha-mauve";
-  # };
-
   # Niri
   programs.niri.enable = true;
   programs.xwayland.enable = true;
   services.displayManager.defaultSession = "niri";
 
-  # Ly displaymanager
-  services.displayManager.ly.enable = true;
+  # SDDm
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    theme = "catppuccin-mocha-mauve";
+  };
 
   # XDG Portals
   xdg.portal = {

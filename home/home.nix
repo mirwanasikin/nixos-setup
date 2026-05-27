@@ -2,7 +2,6 @@
 
 {
   imports = [
-    # inputs.mangowm.hmModules.mango
     inputs.spicetify-nix.homeManagerModules.default
     ./modules/foot.nix
     ./modules/spicetify.nix
@@ -19,7 +18,6 @@
     ./modules/helium.nix
     ./modules/wf-recorder.nix
     ./modules/symlink.nix
-    # ./modules/mango.nix
   ];
 
   home.username = "irwan";
