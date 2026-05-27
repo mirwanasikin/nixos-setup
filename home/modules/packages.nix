@@ -54,7 +54,6 @@
     imv
     obsidian
     cava
-    todoist-electron
     playerctl
     zathura
 

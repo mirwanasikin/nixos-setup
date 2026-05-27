@@ -35,8 +35,8 @@ Here's my packages I used the most and my configuration
 | Category          | Choice                                                                  |
 | ----------------- | ----------------------------------------------------------------------- |
 | `Kernel`          | [CachyOS LTS](https://github.com/xddxdd/nix-cachyos-kernel)             |
-| `Window Manager`  | Sway and Niri                                                           |
-| `Display Manager` | Ly                                                                      |
+| `Window Manager`  | Niri                                                                    |
+| `Display Manager` | Sddm                                                                    |
 | `Terminal`        | Foot                                                                    |
 | `Shell`           | zsh                                                                     |
 | `Browser`         | [Helium](https://github.com/oxcl/nix-flake-helium-browser)              |
