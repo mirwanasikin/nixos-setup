@@ -9,6 +9,7 @@ return {
       docker_compose_language_service = { mason = false },
       clangd = { mason = false },
       terraformls = { mason = false },
+      tofuls = { mason = false },
     },
   },
 }
