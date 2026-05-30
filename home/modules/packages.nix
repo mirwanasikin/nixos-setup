@@ -38,6 +38,7 @@
     ssm-session-manager-plugin
     ansible
     terraform
+    opentofu
     kdePackages.kdeconnect-kde
     kubectl
     gitlab-ci-local

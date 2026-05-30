@@ -31,9 +31,13 @@
     terraform-ls
     tflint
 
+    # tofu
+    tofu-ls
+
     # Markdown
     markdownlint-cli2
     marksman
+    pandoc
 
     # C
     clang-tools
