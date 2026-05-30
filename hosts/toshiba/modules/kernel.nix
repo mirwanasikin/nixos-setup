@@ -14,8 +14,10 @@
     inputs.nix-cachyos-kernel.overlays.pinned
   ];
 
-  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-lts;
+  # boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-lts;
   # boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+  # boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-lts-lto;
+  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto;
 
   # Binary cache
   nix.settings.substituters = [
