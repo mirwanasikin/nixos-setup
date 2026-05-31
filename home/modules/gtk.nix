@@ -1,20 +1,24 @@
-{ pkgs, config, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 {
   gtk = {
     enable = true;
     gtk4.theme = config.gtk.theme;
     theme = {
-      name = "catppuccin-mocha-blue-standard";
+      name = "Catppuccin-Mocha-Standard-Mauve-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
+        accents = [ "mauve" ];
         variant = "mocha";
       };
     };
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
     };
-    cursorTheme = {
+    cursorTheme = lib.mkForce {
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
       size = 24;
